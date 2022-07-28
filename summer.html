@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/summer1.css" type="text/css">
+		<script type="text/javascript">
+						function dispartime()
+						{
+							var time = new Date();
+							var hour = time.getHours();
+							var minute = time.getMinutes();
+							var second = time.getSeconds();
+							if (minute < 10)
+								minute="0"+minute;
+							if (second < 10)
+								second="0"+second;
+							document.getElementById("time").innerHTML="<span id='hour'>"+hour+"</span>:<span id='minute'>" + minute+"</span>:<span id='second'>"+second+"</span>";
+							
+							var myTime = setInterval("dispartime()",1000);
+						}
+						</script>
+	</head>
+	<body class="bgp" onload="dispartime()">
+		<div class="bananer">
+			<div class="toptime">
+					当前时间:<p  id="time"style= color: white; font-size: 50px; height: 20px;"></p>
+					</div>
+			<a href="login.html"><button class="login">登录</button></a>	
+			<nav>
+				<a href="">text1</a>
+				<ul class="list">
+				<li class="list1">1</li>
+				<li class="list1">2</li>
+				<li class="list1">3</li>
+				<li class="list1">4</li>
+				<li class="list1">5</li>
+			</ul>
+			</nav>
+			<nav>
+				<a href="">text2</a>
+				<ul class="list">
+				<li class="list1">1</li>
+				<li class="list1">2</li>
+				<li class="list1">3</li>
+				<li class="list1">4</li>
+				<li class="list1">5</li>
+			</ul>
+			</nav>
+			<nav>
+				<a href="">text3</a>
+				<ul class="list">
+				<li class="list1">1</li>
+				<li class="list1">2</li>
+				<li class="list1">3</li>
+				<li class="list1">4</li>
+				<li class="list1">5</li>
+			</ul>
+			</nav>
+			<nav>
+				<a href="suixin.html">随心语录</a>
+			</nav>
+		</div>
+		<div class="shell">
+			<div class="box">
+				<img src="image/lunbo1.jpg" alt="">
+				<!-- <span>Image</span> -->
+			</div>
+			<div class="box">
+				<img src="image/lunbo2.jpg" alt="">
+				<!-- <span>Video</span> -->
+			</div>
+			<div class="box">
+				<img src="image/lunbo3.jpg" alt="">
+				<!-- <span>File</span> -->
+			</div>
+			<div class="box">
+				<img src="image/lunbo4.jpg" alt="">
+				<!-- <span>Music</span> -->
+			</div>
+			<div class="box">
+				<img src="image/lunbo5.jpg" alt="">
+				<!-- <span>Style</span> -->
+			</div>
+			<div class="box">
+				<img src="image/lunbo6.jpg" alt="">
+			<!-- 	<span>Type</span> -->
+			</div>
+		</div>
+	</body>
+</html>

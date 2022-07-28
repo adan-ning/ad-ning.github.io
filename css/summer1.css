@@ -1,0 +1,160 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins";
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+	
+.bgp{
+	background-image: url("../image/backimage.png") ;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+html{
+	height: 100%;
+}
+.bananer{
+	width: 100%;
+	height: 40px;
+	/* background-color: aqua; */
+	background-color: rgba(255, 255, 255, 0.3);
+	opacity: 0.5;
+	position: absolute;
+	top: 0%;
+}
+.toptime{
+	font-family: "黑体";
+	font-size: 23px;
+	border-style: none;
+	margin-left: 1700px;
+	color: white;
+	float: left;
+	position: absolute;
+	top: 10px;
+}
+#time{
+	position: absolute;
+	right: -100px;
+	top: -2px;
+}
+.login{
+	position: absolute;
+	height: 35px;
+	width: 70px;
+	right: 260px;
+	top: 2px;
+	border-radius: 15px;
+	border: 1px solid #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+	font-family: "黑体";
+	font-size: 20px;
+}
+nav{
+	width: 160px;
+	height: 40px;
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 0;
+}
+nav a{
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	font-family: "黑体";
+	color: black;
+	text-decoration-line: none;
+}
+.list{
+	width: 160px;
+	height: 115px;
+	display: none;
+	list-style: none;
+	background-color: yellow;
+}
+.list1{
+	text-align: center;
+	font-family: "黑体";
+	font-size: 18px;
+	border: 1px solid black;
+}
+nav>a:hover+ul{
+display: block;
+		}
+		
+nav>ul:hover{
+display: block;
+		}
+@keyframes frames{
+  from{
+    height: 0px;
+  }
+  to{
+    height: 115px;
+  }
+}
+.list{
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  /* 绑定动画名字并且设置持续时间 */
+  animation-name: frames;
+  animation-duration: 0.5s;
+}
+
+a .list{
+  display: block;
+}
+.list{
+	animation-fill-mode: forwards;
+}
+.shell{
+	width: 50%;
+	height: 450px;
+	position: absolute;
+	top: 60px;
+	display: flex;
+}
+.box{
+	flex: 1;
+	overflow: hidden;
+	transition: .5s;
+	margin: 0 20px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.box>img{
+	width: 200%;
+	height: 100%;
+	object-fit: cover;
+	transition: .5s;
+}
+.box>span{
+	font: bold 20px '微软雅黑' ;
+	text-align: center;
+	height: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box:hover{
+	flex-basis: 40%;
+}
+.box:hover>img{
+	width: 100%;
+	height: 100%;
+}
+
+
